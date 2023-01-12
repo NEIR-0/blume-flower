@@ -1,0 +1,940 @@
+*{
+    margin: auto 0;
+}
+
+/* scrool smooth */
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    cursor: default;
+}
+
+.header{
+    /* background-color: red; */
+    background-color: white;
+
+    /* important */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* ///////// */
+}
+
+.navbar{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 0 5px;
+}
+
+.logo img{
+    /* background-color: yellow; */
+    height: 67px;
+    width: 70px;
+    margin-top: 5px;
+}
+
+.navigasi ul{
+    list-style: none;
+    margin-right: -5px;
+}
+
+.navigasi ul li{
+    /* background-color: green;   */
+    float: left;
+}
+
+.navigasi ul li a{
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    padding: 28px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+/* animation */
+.navigasi ul li a:hover{
+    transition: 0.5s;
+    background-color: #ffaeae;
+    color: white;
+}
+
+.phone{
+    display: none;
+} 
+
+.FlowerBouquet{
+    /* background-color: yellow; */
+    width: 90%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.DFlowerBouquet{
+    padding-left: 20px;
+}
+
+.DFlowerBouquet h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: #3c3c3c;
+}
+
+.DFlowerBouquet p{
+    font-size: 18px;
+    margin-top: 10px;
+    color: #5b5b5b;
+}
+
+#ProductCard{
+    /* background-color: green; */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* html javascript */
+#P1{
+    /* background-color: red; */
+    display: flex;
+    width: 100%;
+}
+
+#P2{
+    /* background-color: blue; */
+    display: flex;
+    width: 100%;
+}
+
+.card{
+    background: #fbfbfb;
+    box-shadow: 5px 5px 4px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    padding: 20px;
+    width: 50%;
+    height: 330px;
+    margin: 50px 10px;
+    transition: 0.5s;
+}
+
+/* animation */
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.cardimg{
+    /* background-color: green; */
+    text-align: center;
+    padding: 8px 10px;
+}
+
+.cardimg img{
+    /* background-color: yellow; */
+    width: 160px;
+    height: 190px;
+    margin: auto;
+}
+
+/* cek js */
+.saturation{
+    filter: grayscale(100%);
+}
+
+/* .cardWarp{
+    background-color: blue;
+} */
+
+.Dproduct{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 10px; 
+}
+
+.Dproduct h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #2e2e2e;
+}
+
+.available{
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #2ccb6e;
+    color: white;
+    padding: 2px 10px;
+}
+
+.unavailable{
+    background-color: #fa4f4f;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    padding: 2px 10px;
+}
+
+.Dproduct h1{
+    font-size: 16px;
+    font-weight: 600;
+    color: #5b5b5b;
+}
+
+#discount{
+    color: #f65d6d;
+    animation-name: disc;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    text-decoration: line-through;
+}
+
+/* animation */
+@keyframes disc {
+    0%{
+        opacity: 1;
+    }
+    
+    25%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    75%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+  }
+
+.RCproduct{
+    /* background-color: yellow; */
+    justify-content: space-between;
+    padding: 7px 10px; 
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.rating{
+    /* background-color: blue; */
+    display: flex;
+}
+
+.rating i{
+    margin-right: 5px; 
+    color: gold;
+}
+
+.rating p{
+    font-size: 14px;
+    margin-left: 5px;
+    color: #5b5b5b;
+}
+
+.troli i{
+    /* background-color: red; */
+    font-size: 19px;
+    color: #5b5b5b;
+    transition: 0.5s;
+}
+
+/* animation */
+.troli i:hover{
+    color: #ffaeae;
+    transition: 0.5s;
+}
+
+.footer{
+    padding-top: 5%;
+    background-color: #e9e9e9;
+    width: 100%;
+}
+
+.Dfooter{
+    /* background-color: yellow; */
+    width: 85%;
+    margin: auto;
+    padding: 3% 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment{
+    /* background-color: green; */
+    width: 500px;
+    height: 350px;
+    margin-right: 20px;
+}
+
+.payment h1{
+    font-size: 22px;
+    font-weight: 600;
+    color: #323232;
+    margin-bottom: 20px;
+}
+
+.payment img{
+    width: 28%;
+}
+
+.findus{
+    /* background-color: blue; */
+    width: 500px;
+    height: 350px;
+    margin-right: 20px;
+}
+
+.findus h1{
+    font-size: 22px;
+    font-weight: 600;
+    color: #323232;
+    margin-bottom: 20px;
+}
+
+.DFindUs{
+    display: flex;
+    color: #323232;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.DFindUs p{
+    margin-left: 20px;
+}
+
+.followus{
+    /* background-color: red; */
+    width: 400px;
+    height: 350px;
+}
+
+.followus h1{
+    font-size: 22px;
+    font-weight: 600;
+    color: #323232;
+    margin-bottom: 20px;
+}
+
+.DFollowUs{
+    display: flex;
+}
+
+.DFollowUs a{
+    text-decoration: none;
+}
+
+.iconSosIg{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    background-color: white;
+    transition: 0.5s;
+    margin-bottom: 20px;
+    color: #c32aa3;
+}
+
+.iconSosTw{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    background-color: white;
+    transition: 0.5s;
+    margin-bottom: 20px;
+    color: #1da1f2;
+}
+
+.iconSosWa{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    background-color: white;
+    transition: 0.5s;
+    margin-bottom: 20px;
+    color: #25d366;
+}
+
+.iconSosFc{
+    background-color: white;
+    transition: 0.5s;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 20px;
+    color: #3b5998;
+}
+
+.IdSos{
+    margin-top: 3px;
+}
+
+.IdSos a{
+    /* background-color: white; */
+    font-size: 20px;
+    font-weight: 400;
+    color: #323232;
+    margin-left: 12px;
+    text-decoration: none;
+}
+
+.cpright{
+    text-align: center;
+}
+
+.cpright img{
+    margin-bottom: 20px;
+}
+
+/* animation */
+.iconSosIg:hover{
+    background-color: #c32aa3;
+    color: white;
+    transition: 0.5s;
+}
+
+.iconSosTw:hover{
+    background-color: #1da1f2;
+    color: white;
+    transition: 0.5s;
+}
+
+.iconSosWa:hover{
+    background-color: #25d366;
+    color: white;
+    transition: 0.5s;
+}
+
+.iconSosFc:hover{
+    background-color: #3b5998;
+    color: white;
+    transition: 0.5s;
+}
+
+
+/* Responsive ipad */
+/* ipad */
+@media all and (max-width: 1000px){
+    .navigasi ul li a{
+        font-size: 15px;
+        padding: 29px 25px;
+    }
+
+    .phone{
+        display: none;
+    }
+
+    .FlowerBouquet{
+        /* background-color: yellow; */
+        padding-top: 60px;
+    }
+
+    #ProductCard{
+        display: block;
+    }
+
+    /* javascript */
+    #P1{
+        /* background-color: red; */
+        display: flex;
+    }
+    
+    #P2{
+        /* background-color: blue; */
+        display: flex;
+    }
+
+    .card{
+        padding: 20px;
+        width: 40%;
+        height: 360px;
+        margin: 50px auto 30px auto;
+    }
+
+    /* animation non aktif */
+    .card:hover{
+        transform: scale(1);
+    }
+    
+    /* .cardimg{
+        background-color: green;
+    } */
+    
+    .cardimg img{
+        /* background-color: yellow; */
+        width: 180px;
+        height: 210px;
+        margin: auto;
+    }
+    
+    /* .cardWarp{
+        background-color: blue;
+    } */
+    
+    /* .Dproduct{
+        background-color: red;
+    } */
+    
+    .Dproduct h3{
+        font-size: 20px;
+    }
+    
+    .Dproduct p{
+        font-size: 16px;
+    }
+    
+    .Dproduct h1{
+        font-size: 20px;
+    }
+    
+    /* .RCproduct{
+        background-color: yellow;
+    } */
+    
+    .rating i{
+        font-size: 18px;
+    }
+    
+    .rating p{
+        font-size: 16px;
+    }
+    
+    .troli i{
+        /* background-color: red; */
+        font-size: 22px;
+    }
+    
+    .footer{
+        /* background-color: rebeccapurple; */
+        padding-top: 70px;
+    }
+    
+    .Dfooter{
+        /* background-color: yellow; */
+        height: 200px;
+        width: 75%;
+        padding: 0 5px 50px 5px;
+        justify-content: space-between;
+    }
+    
+    .payment{
+        /* background-color: green; */
+        height: 200px;
+        margin-right: 0px;
+    }
+    
+    .payment h1{
+        font-size: 20px;
+    }
+
+    .payment img{
+        width: 50px;
+    }
+    
+    .findus{
+        /* background-color: blue; */
+        height: 200px;
+        margin-right: 0px;
+    }
+    
+    .findus h1{
+        font-size: 20px;
+    }
+    
+    .followus{
+        /* background-color: red; */
+        height: 200px;
+    }
+    
+    .followus h1{
+        font-size: 20px;
+    }
+    
+    .DFindUs{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    
+    .DFindUs p{
+        margin-left: 10px;
+    }
+    
+    .iconSosIg{
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .iconSosTw{
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .iconSosWa{
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .iconSosFc{
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .IdSos{
+        margin-top: -2px;
+    }
+    
+    .IdSos a{
+        /* background-color: white; */
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .cpright img{
+        width: 400px;
+        height: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+
+/* Responsive mobile */
+/* phone */
+@media all and (max-width: 670px){
+    html{
+        overflow-x: hidden;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .header{
+        /* background-color: rebeccapurple; */
+        width: 100%;
+        position: fixed;
+    }
+
+    .phone{
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        height: 30px;
+        justify-content: space-between;
+    }
+
+    .phone span{
+        display: block;
+        width: 28px;
+        height: 5px;
+        background-color: black;
+        border-radius: 3px;
+    }
+
+    .phone input{
+        position: absolute;
+        height: 28px;
+        width: 28px;
+        opacity: 0;
+        z-index: 2;
+    }
+    
+    /* taro di ul */
+    .navigasi ul{
+        /* background-color: blue; */
+        background-color: #323232;
+        position: absolute;
+        right: 5px;
+        top: 47px;
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        width: 35%;
+        justify-content: space-between;
+        text-align: center;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    /* javascrpit */
+    .navigasi ul.slide{
+        transform: translateX(0);
+    }
+
+    .navigasi ul li{
+        margin-right: 12%;
+        text-align: right;
+    }
+
+    .navigasi ul li a{
+        font-size: 20px;
+        padding: 0;
+        position: relative;
+        color: white;
+        
+    }
+
+    /* animation */
+    .navigasi ul li a:hover{
+        transition: 0;
+        background-color: #323232;
+        color: #ffaeae;
+    }
+
+    /* .logo{
+        background-color: brown; 
+    } */
+
+    .logo img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .FlowerBouquet{
+        /* background-color: yellow; */
+        padding-top: 100px;
+    }
+
+    .DFlowerBouquet{
+        text-align: center;
+    }
+
+
+    /* javascript */
+    #P1{
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    #P2{
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    .card{
+        padding: 20px;
+        width: 75%;
+        height: 360px;
+        margin: 30px auto 30px auto;
+    }
+    
+    /* animation */
+    .card:hover{
+        transform: scale(1);
+    }
+    
+    /* .cardimg{
+        background-color: green;
+    } */
+    
+    .cardimg img{
+        /* background-color: yellow; */
+        width: 180px;
+        height: 210px;
+        margin: auto;
+    }
+    
+    /* .cardWarp{
+        background-color: blue;
+    } */
+    
+    /* .Dproduct{
+        background-color: red;
+    } */
+    
+    .Dproduct h3{
+        font-size: 18px;
+    }
+    
+    .Dproduct p{
+        font-size: 14px;
+        padding: 0 5px;
+    }
+    
+    .Dproduct h1{
+        font-size: 18px;
+    }
+    
+    /* .RCproduct{
+        background-color: yellow;
+    } */
+    
+    .rating i{
+        font-size: 16px;
+    }
+    
+    .rating p{
+        font-size: 15px;
+    }
+    
+    .troli i{
+        /* background-color: red; */
+        font-size: 20px;
+    }
+
+    .footer{
+        padding-top: 50px;
+    }
+
+    .Dfooter{
+        /* background-color: rebeccapurple; */
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .payment{
+        /* background-color: green; */
+        width: 90%;
+        height: auto;
+        margin: auto;
+        padding-bottom: 30px;
+    }
+
+    .payment h1{
+        margin-bottom: 0px;
+        font-size: 20px;
+    }
+
+    .payment img{
+        width: 50px;
+        height: 15px;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+
+    .findus{
+        /* background-color: blue; */
+        width: 90%;
+        height: auto;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+    
+    .findus h1{
+        margin-bottom: 0px;
+        font-size: 20px;
+    }
+
+    .DFindUs{
+        margin-top: 10px;
+    }
+
+    .DFindUs p{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    
+    .DFindUs i{
+        font-size: 12px;
+    }
+
+    .followus{
+        /* background-color: red; */
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+    
+    .followus h1{
+        margin-bottom: 0px;
+        font-size: 20px;
+    }
+
+    .DFollowUs{
+        margin-top: 15px;
+    }
+
+    .iconSosIg{
+        width: 25px;
+        height: 25px;
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+
+    .iconSosTw{
+        width: 25px;
+        height: 25px;
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+
+    .iconSosWa{
+        width: 25px;
+        height: 25px;
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+    
+    .iconSosFc{
+        width: 25px;
+        height: 25px;
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+
+    .IdSos{
+        margin-top: 0px;
+    }
+
+    .IdSos a{
+        /* background-color: yellow; */
+        font-size: 15px;
+        font-weight: 100;
+        color: #323232;
+        margin-left: 10px;
+        text-decoration: none;
+    }
+
+    .cpright{
+        /* background-color: rebeccapurple; */
+        padding-top: 120px;
+    }
+
+    .cpright img{
+        margin-top: 100px;
+        height: 10px;
+        width: 200px;
+    }
+}

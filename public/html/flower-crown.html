@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- icaon web contoh pemanggilan outside same file-->
+    <link rel="icon" type="image/png" href="../../foto/logo-blume 1.png">
+
+    <!-- ccs -->
+    <link rel="stylesheet" href="../css/flower-crown.css">
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- icon font awoseome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- scroll animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Flowers Crown</title>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../../foto/logo-blume 1.png" alt="logo">
+            </div>
+            <div class="navigasi">
+                <ul>
+                    <li><a href="../../index.html" class="H">Home</a></li>
+                    <li><a href="../../index.html" class="AB">About Us</a></li>
+                    <li><a href="../../index.html" class="P">Product</a></li>
+                    <li><a href="../../index.html" class="C">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="phone">
+                <input type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="FlowerBouquet">
+        <div class="DFlowerBouquet">
+            <h1>Flower Crown</h1>
+            <p>flower crown is one of the hair accessories that is often used to enhance your appearance and is easy to install to create an amazing new hairstyle.</p>
+        </div>
+        
+        <!-- javascript -->
+        <!-- ingat ini id -->
+        <div id="ProductCard">
+            <div id="P1" data-aos="fade-up" data-aos-delay="100"></div>
+            <div id="P2" data-aos="fade-up" data-aos-delay="150"></div>
+        </div>  
+        <!-- ----------- -->
+
+    </div>
+        
+    <div class="footer">
+        <div class="Dfooter">
+            <div class="payment">
+                <h1>Payment</h1>
+                <img src="../../foto/img-visa.png" alt="visa">
+                <img src="../../foto/img-mastercard.png" alt="mastercard">
+                <img src="../../foto/img-paypal.png" alt="paypal">
+            </div>
+
+            <div class="findus">
+                <h1>Find Us</h1>
+                <div class="DFindUs">
+                    <i class="fa-solid fa-clock"></i>
+                    <p>09.00 - 16.30</p>
+                </div>
+                <div class="DFindUs">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>BlumeFloristt@gmail.com</p>
+                </div>
+                
+            </div>
+            <div class="followus">
+                <h1>Follow Us</h1>
+                <div class="DFollowUs">
+                    <a href="#">
+                        <div class="iconSosIg">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </a>
+                    <div class="IdSos">
+                        <a href="#">@blumefloristt</a>
+                    </div>
+                </div>
+
+                <div class="DFollowUs">
+                    <a href="#">
+                        <div class="iconSosTw">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </a>
+                    <div class="IdSos">
+                        <a href="#">@FloristBlume</a>
+                    </div>
+                </div>
+
+                <div class="DFollowUs">
+                    <a href="#">
+                        <div class="iconSosWa">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                    </a>
+                    <div class="IdSos">
+                        <a href="#">+6289531333701</a>
+                    </div>
+                </div>
+
+                <div class="DFollowUs">
+                    <a href="#">
+                        <div class="iconSosFc">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </a>
+                    <div class="IdSos">
+                        <a href="#">Blume Florist</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cpright">
+            <img src="../../foto/copyright.png" alt="cpright">
+        </div>
+    </div>
+
+    <!-- js link -->
+    <script src="../js/nav.js"></script>
+
+    <!-- module -->
+    <!-- kalo mau pakai js module html harus live server -->
+    <script src="../js/flower-crown.js" type="module"></script>
+
+    <!-- //smooth scrooling// -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+            
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+            } // End if
+        });
+        });
+    </script>
+
+    <!-- scroll animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
